@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "587e7207-f93d-4967-a815-246073ef1f7b",
+		"name": "Pokemon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:5001/api/pokemon",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"codigo\": 9,\r\n        \"nome\": \"Venusaur\",\r\n        \"tipo\": \"Grass\"\r\n}  ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/pokemon",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"pokemon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:5001/api/pokemon/13",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/pokemon/13",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"pokemon",
+						"13"
+					]
+				},
+				"description": "postman Pokemon"
+			},
+			"response": []
+		}
+	]
+}
